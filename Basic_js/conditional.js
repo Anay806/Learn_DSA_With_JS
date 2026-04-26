@@ -21,26 +21,71 @@
 
 //Q2. shoup discount
 
-let totalPer = prompt("Enter your total purchasing value")
+// let amount = prompt("Enter your total purchasing value")
+// let dis = 0;
 
-if (totalPer > 0 && totalPer <= 5000) {
+// if (isNaN(amount)) {
+//   console.log("Wroung input");
 
-  console.log("Sorry no discount, Your Amount is : ", totalPer);
+// }
+
+// if (amount > 0 && amount <= 5000) {
+//   console.log("Your total amount, no discount of this range: ", amount);
+
+// } else if (amount > 5000 && amount <= 7000) {
+//   dis = 5;
+
+// } else if (amount > 7000 && amount <= 9000) {
+//   dis = 10;
+
+// }
+// else if (amount > 9000) {
+//   dis = 20;
+
+// }
+// console.log(amount - Math.floor(amount * dis) / 100);
 
 
-} else if (totalPer > 5001 && totalPer <= 7000) {
-  let price = totalPer;
-  let proPrice = price / 100 / 10 %
-    console.log("Your discounted Amounted: ", proPrice);
+// let currUnit = Number(prompt("Enter your total unit of electricity"))
 
-} else if (totalPer > 7000 && totalPer < 9000) {
-  let tPrice = totalPer;
-  let PPrice = tPrice / 100 / 10 %
-    console.log("Your discounted price:", PPrice);
+// if (currUnit > 0 && currUnit <= 100) {
+//   console.log("Your Total Electric Bill: ", currUnit * 4.2);
 
-} else {
-  let finalPrice = totalPer;
-  let price = finalPrice / 100 / 10 %
-    console.log('Funally your got this big Discounted:', price);
+// } else if (currUnit > 100 && currUnit <= 200) {
+//   console.log(currUnit * 6);
+
+// } else if (currUnit > 200 && currUnit <= 400) {
+//   console.log(currUnit * 8);
+
+// } else if (currUnit > 400) {
+//   console.log(currUnit * 13);
+
+// }
+
+let unit = Number(prompt('Enter Your Total unit'))//700
+let amount = 0;
+
+if (isNaN(unit)) {
+  console.log("Wroung Input");
 
 }
+if (unit > 400) {
+  amount = (unit - 400) * 13 // suppose 700-300 //3900
+  unit = 400
+}//400
+if (unit > 200 && unit <= 400) {
+  amount += (unit - 200) * 8 //1600
+  unit = 200;
+
+} //200
+if (unit > 100 && unit <= 200) {
+  amount += (unit - 100) * 6 // 600
+  unit = 100;
+}
+
+amount += unit * 4
+
+console.log(amount);
+
+
+
