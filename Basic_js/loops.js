@@ -58,5 +58,66 @@
 
 // }
 
+//While Loop*******************************************
+
+//for ka pattern tha
+// for(start; end; change){
+
+// }
+
+//while ka pattern
+
+// start;
+// while(ens){
+//   code
+//   Change;
+// }
+
+// let i = 0;
+// while (i <= 20) {
+//   console.log(i);
+//   i++;
+
+// }
+
+//Q1. sum of digit
+
+//let num = Number(prompt("Enter a number"))
+
+// sum = 0
+// let i = 0;
+// while (i <= num) {
+//   i++;
+//   sum = i + sum
+//
+
+
+// }
+// console.log(sum);
+
+// let sum = 0; 5
+
+// while (num > 0) {
+//   let rem = num % 10;
+//   sum = sum + rem;
+//   num = Math.floor(num / 10)
+// }
+
+// console.log(sum);9876
+
+//Q reverse the Number
+// let num = Number(prompt("Enter your number"))
+// let i = 0
+// while (num > 0) {
+//   let rem = num % 10;
+//   i = i * 10 + rem;
+//   num = Math.floor(num / 10)
+// }
+// console.log(i);
+
+
+
+
+
 
 
