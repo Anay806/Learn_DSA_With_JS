@@ -117,6 +117,39 @@
 
 
 
+//Do-whhile *****************************
+// let i = 0
+// do {
+//   console.log("Hello", i);
+//   i++;
+
+// } while (i <= 10);
+
+
+
+// guess the number game***************
+let random = Math.floor(Math.random() * 100) + 1
+
+let guess = -1;
+while (guess !== random) {
+  guess = Number(prompt("Guess the number"))
+  if (isNaN(guess) || guess < 1 || guess > 100) {
+    console.log("Try again between 1-100");
+    continue
+
+  }
+  if (guess > random) {
+    console.log("Its too High");
+
+  } else if (guess < random) {
+    console.log("its too Low");
+
+  } else {
+    console.log("Congrats 🎉 and number was: ", guess);
+
+  }
+}
+
 
 
 
