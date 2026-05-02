@@ -3,15 +3,40 @@
 
 let prompt = require('prompt-sync')();
 let num = Number(prompt("Enter a number")) //10
-// process.stdout.write(a) //10
+// // process.stdout.write(a) //10
 
-for (let i = 1; i <= num; i++) {
-  for (let j = 1; j <= i; j++) {
-    process.stdout.write("1 ",)
-  }
+// for (let i = 1; i <= num; i++) {
+//   for (let j = 1; j <= i; j++) {
+//     process.stdout.write("1 ",)
+//   }
 
-  console.log();
+//   console.log();
 
 
-}
+// }
+
+//Q2.
+
+// num = 5
+// for (let i = 1; i <= num; i++) {
+//   for (let j = 1; j <= i; j++) {
+//     process.stdout.write(j + " "); //1
+//                                    // 1 2
+//                                    // 1 2 3 and so onn
+//   }
+//   console.log();
+
+
+// }
+
+//Q3.
+
+// for (let i = 1; i <= num; i++) {
+//   let ascii = 65;
+//   for (let j = 1; j <= i; j++) {
+//     process.stdout.write(String.fromCharCode(ascii) + " ")
+//     ascii++;
+//   } console.log();
+
+// }
 
