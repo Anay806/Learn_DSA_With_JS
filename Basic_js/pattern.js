@@ -45,10 +45,22 @@
 let prompt = require('prompt-sync')();
 let num = Number(prompt("Enter a number"))
 
-for (let i = num; i <= num; i++) {
-  for (let j = i; j >= i; j--) {
-    console.log("* ");
+// for (let i = num; i <= num; i++) {
+//   for (let j = i; j >= i; j--) {
+//     console.log("* ");
 
+//   }
+//   console.log();
+
+// }
+
+//Q5. * pattern
+
+for (let i = 1; i <= num; i++) {
+  for (let j = 1; j <= num; j++) {
+    if (i == j || i + j == num + 1) {
+      process.stdout.write("* ")
+    } else process.stdout.write(" ")
   }
   console.log();
 
