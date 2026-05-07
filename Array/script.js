@@ -31,12 +31,33 @@
 
 //prompt se value lena aur array me put karna
 
-let arr = new Array(5);
+// let arr = new Array(5);
 
-for (let i = 0; i < arr.length; i++) {
-  arr[i] = Number(prompt("Enter a value"))
+// for (let i = 0; i < arr.length; i++) {
+//   arr[i] = Number(prompt("Enter a value"))
+// }
+// console.log(arr);
+
+// let arr = [10, 20, 30, 40, 50, 60]
+
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   sum = sum + arr[i]
+// }
+// console.log(sum);
+
+//Searching the max element
+
+let arr = [10, 3, 56, 34, 785, 3456, 2341, 5634, 7854, 9876]
+
+let max = arr[0];
+for (let i = 1; i < arr.length; i++) {
+  if (max < arr[i]) {
+    max = arr[i]
+  }
 }
-console.log(arr);
+console.log(max);
+
 
 
 
