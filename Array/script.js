@@ -48,15 +48,33 @@
 
 //Searching the max element
 
-let arr = [10, 3, 56, 34, 785, 3456, 2341, 5634, 7854, 9876]
+// let arr = [10, 3, 56, 34, 785, 3456, 2341, 5634, 7854, 9876]
 
-let max = arr[0];
-for (let i = 1; i < arr.length; i++) {
-  if (max < arr[i]) {
-    max = arr[i]
+// let max = arr[0];
+// for (let i = 1; i < arr.length; i++) {
+//   if (max < arr[i]) {
+//     max = arr[i]
+//   }
+// }
+// console.log(max);
+
+//Q2. Second maxximam of the array
+
+let arr = [10, 35, 34, 345, 54647, 65656, 56557, 325465, 56578, 23457, 456376, 464567]
+
+let max = Math.max(arr[0], arr[1]);
+let max02 = Math.min(arr[0], arr[1])
+
+for (let i = 2; i < arr.length; i++) {
+  if (arr[i] > max) {
+    max02 = max
+    max = arr[i];
+  } else if (arr[i] > max02) {
+    max02 = arr[i]
   }
 }
-console.log(max);
+console.log(max02);
+
 
 
 
