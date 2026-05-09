@@ -60,20 +60,65 @@
 
 //Q2. Second maxximam of the array
 
-let arr = [10, 35, 34, 345, 54647, 65656, 56557, 325465, 56578, 23457, 456376, 464567]
+// let arr = [10, 35, 34, 345, 54647, 65656, 56557, 325465, 56578, 23457, 456376, 464567]
 
-let max = Math.max(arr[0], arr[1]);
-let max02 = Math.min(arr[0], arr[1])
+// let max = Math.max(arr[0], arr[1]);
+// let max02 = Math.min(arr[0], arr[1])
 
-for (let i = 2; i < arr.length; i++) {
-  if (arr[i] > max) {
-    max02 = max
-    max = arr[i];
-  } else if (arr[i] > max02) {
-    max02 = arr[i]
+// for (let i = 2; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max02 = max
+//     max = arr[i];
+//   } else if (arr[i] > max02) {
+//     max02 = arr[i]
+//   }
+// }
+// console.log(max02);
+
+//Reverse Array
+
+// let arr = [10, 20, 30, 40, 50]
+// let temp = new Array(arr.length);
+
+// let j = 0;
+// for (let i = arr.length - 1; i >= 0; i--) {
+//   temp[j] = arr[i]
+//   j++
+// }
+// console.log(temp);
+
+
+//Second method of revere Array
+
+// let arr = [10, 20, 30, 40, 50]
+// let i = 0, j = arr.length - 1;
+
+// while (i != j) {
+//   let temp = arr[i]
+//   arr[i] = arr[j]
+//   arr[j] = temp
+//   i++
+//   j--
+// }
+// console.log(arr);
+
+let arr = [1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0]
+
+let i = 0, j = 0
+while (i < arr.length) {
+  if (arr[i] == 0) {
+    let temp = arr[i]
+    arr[i] = arr[j]
+    arr[j] = temp;
+    j++
   }
+  i++
 }
-console.log(max02);
+
+console.log(arr);
+
+
+
 
 
 
