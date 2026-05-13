@@ -102,20 +102,46 @@
 // }
 // console.log(arr);
 
-let arr = [1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0]
+// let arr = [1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0]
 
-let i = 0, j = 0
-while (i < arr.length) {
-  if (arr[i] == 0) {
-    let temp = arr[i]
-    arr[i] = arr[j]
-    arr[j] = temp;
-    j++
-  }
-  i++
-}
+// let i = 0, j = 0
+// while (i < arr.length) {
+//   if (arr[i] == 0) {
+//     let temp = arr[i]
+//     arr[i] = arr[j]
+//     arr[j] = temp;
+//     j++
+//   }
+//   i++
+// }
 
-console.log(arr);
+// let arr = new Array(5)
+// for (let i = 0; i < arr.length; i++) {
+//   arr[i] = Number(prompt("Enter a value"))
+// }
+// console.log(arr);
+
+//let arr = [10, 20, 30, 40, 50]
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   sum += arr[i]
+// }
+// console.log(sum);
+// let min = arr[0];
+
+// for (let i = 1; i < arr.length; i++) {
+//   if (min > arr[i]) {
+//     min = arr[i]
+//   }
+// }
+// console.log(min);
+
+
+
+
+
+
+
 
 
 
